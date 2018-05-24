@@ -1,0 +1,22 @@
+class RPSObject
+end
+
+class Rock < RPSObject
+
+  def fight other
+    other.fightRock
+  end
+
+  def fightRock
+    "tie"
+  end
+
+  def fightPaper
+    "win"
+  end
+
+  def fightScissors
+    "lose"
+  end
+
+end

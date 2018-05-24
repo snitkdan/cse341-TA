@@ -7,8 +7,7 @@ public class MyInteger {
   }
 
   public PosRational asPosRational() {
-    return new PosRational(this.n);
-  }
+    return new PosRational(this.
 
   public Object add(Object o) {
     try {
