@@ -52,11 +52,11 @@ public class PosRational implements Comparable<PosRational>, Iterable<Integer>{
     return this;
   }
 
+  @Override
   public int compareTo(PosRational other) {
-    if(this.den != other.den()) {
-      return other.den() - this.den;
-    }
-    return this.num - other.num();
+    int this_newnum = this.num * other.den();
+    int other_newnum = other.num() * this.den;
+    return this_newnum - other_newnum;
   }
 
   public Iterator<Integer> iterator() {
