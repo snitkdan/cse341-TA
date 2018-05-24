@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PosRational implements Comparable<PosRational>, Iterable<PosRational>{
+public class PosRational implements Comparable<PosRational>, Iterable<Integer>{
 
   private int num, den;
 
@@ -57,6 +57,13 @@ public class PosRational implements Comparable<PosRational>, Iterable<PosRationa
       return other.den() - this.den;
     }
     return this.num - other.num();
+  }
+
+  public Iterator<Integer> iterator() {
+    ArrayList<Integer> it = new ArrayList<>();
+    it.add(this.num);
+    it.add(this.den);
+    return it.iterator();
   }
 
 }
