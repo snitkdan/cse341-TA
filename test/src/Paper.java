@@ -5,7 +5,7 @@ public class Paper implements RPSObject {
   }
 
   public String fightRock(RPSObject o) {
-    return "win";
+    return "lose";
   }
 
   public String fightPaper(RPSObject o) {
@@ -13,7 +13,7 @@ public class Paper implements RPSObject {
   }
 
   public String fightScissors(RPSObject o) {
-    return "lose";
+    return "win";
   }
 
   public String toString() {

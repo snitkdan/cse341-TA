@@ -5,11 +5,11 @@ public class Scissors implements RPSObject {
   }
 
   public String fightRock(RPSObject o) {
-    return "lose";
+    return "win";
   }
 
   public String fightPaper(RPSObject o) {
-    return "win";
+    return "lose";
   }
 
   public String fightScissors(RPSObject o) {

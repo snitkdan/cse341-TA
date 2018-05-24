@@ -9,11 +9,11 @@ public class Rock implements RPSObject {
   }
 
   public String fightPaper(RPSObject o) {
-    return "lose";
+    return "win";
   }
 
   public String fightScissors(RPSObject o) {
-    return "win";
+    return "lose";
   }
 
   public String toString() {
