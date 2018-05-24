@@ -25,6 +25,14 @@ public class PosRational implements Comparable<PosRational>, Iterable<Integer>{
     reduce();
   }
 
+  public PosRational add(MyInteger i) {
+    return this.add(i.asPosRational());
+  }
+
+  public PosRational[] coerce(MyInteger n) {
+    return new PosRational[] {n.asPosRational(), this};
+  }
+
   private void reduce() {
     int d = gcd(this.num, this.den);
     this.num = this.num / d;
@@ -50,6 +58,10 @@ public class PosRational implements Comparable<PosRational>, Iterable<Integer>{
     this.den = b * d;
     reduce();
     return this;
+  }
+
+  public String toString() {
+    return String.format("%d / %d", this.num, this.den);
   }
 
   @Override

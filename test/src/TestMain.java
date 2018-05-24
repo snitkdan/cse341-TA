@@ -1,5 +1,7 @@
 public class TestMain {
   public static void main(String args[]) {
+
+    /* Rock Paper Scissors */
     RPSObject s = new Scissors();
     RPSObject r = new Rock();
     RPSObject p = new Paper();
@@ -11,5 +13,10 @@ public class TestMain {
       }
     }
 
+    /* PosRational */
+    MyInteger i1 = new MyInteger(1);
+    PosRational p1 = new PosRational(1,2);
+    System.out.println(i1.add(p1));
+    System.out.println(p1.add(i1));
   }
 }
